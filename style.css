@@ -1,0 +1,74 @@
+body{
+    background-image: url(/imagenes/Mapa_Kanto_Pok27s_Go.webp);
+    
+}
+
+.titulo{
+    font-size: 75px;
+    font-family: "Pokemon Solid", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: red;-moz-text-stroke-width: 2px;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: black;
+      text-shadow: 9px 9px yellow;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.container.is-flipped {
+    transform: rotateY(180deg);
+  }
+
+.carta_frontal{
+    margin: 50px;
+    width: 400px;
+    height: 750px;
+    background-image: url(/imagenes/fondo\ pokedex.jpg);
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.back{
+    position: absolute;
+    margin: 50px;
+    width: 400px;
+    height: 750px;
+    background-image: url(/imagenes/fondo\ pokedex.jpg);
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.carta_frontal__contenido{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 20px;
+
+}
+
+.carta_frontal__img{
+margin-left: 100px;
+width: 200px;
+height: 200px;
+margin-top: 200px;
+}
+
+.btn{
+    margin-top: 10px;
+    width: 100px;
+    height: 25px;
+}
